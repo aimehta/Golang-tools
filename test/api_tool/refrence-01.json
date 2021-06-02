@@ -1,0 +1,23 @@
+{  "api_tool_loadjson" : {
+                       "signature" : {
+                               "1_int" : { "range":[1,100], "describtion" : "", "error" : "" },
+                               "2_string" : {"range" : ["std"], "describtion" : "qualified filename", "error": "Not json or file not present" }    
+                                },
+                      "return_type" : {"1_boolean" : { "range" : [0,1], "describtion": "Returns True or 1 for success and False or 0 for Failure", "error" : ""}, 
+                                       "2_json" : {"range" : "valid", "describtion" : "", "error" : "parsing error" }  
+                                 },
+                      "exposed_variables" : {
+                                     "S1" : {"range" : "int", "describtion" : "Total signature arguments", "error": ""},
+                                     "R1" : {"range" : "int", "describtion" : "Total return variables", "error": ""}   
+        
+                                    },
+                      "behaviour" : {
+                                   "db" : {},
+                                   "io" : {},
+                                   "net" : {},
+                                   "object" : {}   
+                                   },
+                      "usedby" : {}   
+                      } 
+                     
+}
